@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Command Palette with History</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <h2>Command Palette with History</h2>
+    <p>Press <b>Ctrl + K</b>, type, use <b>↑ ↓</b>, and <b>Enter</b>.</p>
+
+    <div id="palette" class="palette hidden">
+        <input type="text" id="search" placeholder="Search or type a command...">
+        <ul id="suggestion-list"></ul>
+        <button id="clear-history" class="hidden">Clear History</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
