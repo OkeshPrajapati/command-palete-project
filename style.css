@@ -1,91 +1,99 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #1e1e1e;
-            color: #fff;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s, color 0.3s;
+    }
 
-        .palette {
-            position: fixed;
-            left: 50%;
-            top: 20%;
-            transform: translateX(-50%);
-            width: 400px;
-            background: #2d2d2d;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(42, 40, 40, 0.5);
-            padding: 20px;
-            z-index: 999;
-        }
+    body.light {
+      background: #f5f5f5;
+      color: black;
+    }
 
-        .hidden {
-            display: none;
-        }
+    h1 {
+      margin-bottom: 10px;
+    }
 
-        #search {
-            width: 100%;
-            padding: 7px;
-            border: none;
-            outline: none;
-            border-radius: 8px;
-            font-size: 17px;
-            background: #1e1e1e;
-            color: white;
-        }
+    p {
+      opacity: 0.8;
+    }
 
-        #suggestion-list {
-            list-style: none;
-            margin: 10px 0 0;
-            padding: 0;
-            max-height: 200px;
-            overflow-y: auto;
-        }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      background: #444;
+      color: white;
+    }
 
-        #suggestion-list li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 6px;
-        }
+    body.light .btn {
+      background: #180d0d;
+      color: rgb(238, 214, 214);
+    }
 
-        #suggestion-list li span {
-            flex: 1;
-        }
+    .palette {
+      background: #2d2d2d;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      padding: 20px;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
 
-        #suggestion-list li button {
-            background: transparent;
-            border: none;
-            color: #ff4d4d;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    body.light .palette {
+      background: #fff;
+      color: black;
+    }
 
-        #suggestion-list li:hover,
-        #suggestion-list li.active {
-            background: #444;
-        }
+    .palette input {
+      width: 100%;
+      padding: 6px;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      border-radius: 8px;
+    }
 
-        #clear-history {
-            margin-top: 10px;
-            background: #ff4d4d;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 14px;
-        }
+    .hidden {
+      display: none;
+    }
 
-        #clear-history:hover {
-            background: #ff1a1a;
-        }
+    .suggestions {
+      margin-top: 10px;
+      background: #3a3a3a;
+      border-radius: 5px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    body.light .suggestions {
+      background: #e0e0e0;
+    }
+
+    .suggestion {
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    .suggestion:hover {
+      background: #555;
+    }
+
+    body.light .suggestion:hover {
+      background: #ccc;
+    }
  

@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Command Palette with History</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Palette</title>
+  <link rel="stylesheet" href="style.css">
   
+
 </head>
-
 <body>
-    <h2>Command Palette with History</h2>
-    <p>Press <b>Ctrl + K</b>, type, use <b>↑ ↓</b>, and <b>Enter</b>.</p>
+  <!-- Homepage Content -->
+  <h1>⚡ Command Palette Project</h1>
+  <p>Press <b>Ctrl + K</b> to open the palette and try commands:</p>
+  <ul>
+    <li><code>yt cats</code> → Search YouTube</li>
+    <li><code>g hello</code> → Search Google</li>
+    <li><code>gh react</code> → Search GitHub</li>
+    <li><code>tw news</code> → Search Twitter</li>
+    <li><code>toggle theme</code> → Switch Dark/Light mode</li>
+  </ul>
+  <button class="btn" id="themeBtn">Toggle Theme</button>
 
-    <div id="palette" class="palette hidden">
-        <input type="text" id="search" placeholder="Search or type a command...">
-        <ul id="suggestion-list"></ul>
-        <button id="clear-history" class="hidden">Clear History</button>
-    </div>
+  <!-- Command Palette -->
+  <div class="palette hidden" id="palette">
+    <input type="text" id="search" placeholder="Type a command... (e.g. yt cats, g hello)">
+    <div class="suggestions" id="suggestions"></div>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
