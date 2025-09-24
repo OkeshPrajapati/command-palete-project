@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const palette = document.getElementById("palette");
 const search = document.getElementById("search");
 const suggestions = document.getElementById("suggestions");
