@@ -1,15 +1,117 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #1e1e1e;
-  color: white;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: background 0.3s, color 0.3s;
-}
+/* 
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background: #f5f5f5;
+      color: black;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      background: #444;
+      color: white;
+    }
+
+    body.light .btn {
+      background: #180d0d;
+      color: rgb(238, 214, 214);
+    }
+
+    .palette {
+      background: #2d2d2d;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      padding: 20px;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    body.light .palette {
+      background: #fff;
+      color: black;
+    }
+
+    .palette input {
+      width: 100%;
+      padding: 6px;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      border-radius: 8px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .suggestions {
+      margin-top: 10px;
+      background: #3a3a3a;
+      border-radius: 5px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    body.light .suggestions {
+      background: #e0e0e0;
+    }
+
+    .suggestion {
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    .suggestion:hover {
+      background: #555;
+    }
+
+    body.light .suggestion:hover {
+      background: #ccc;
+    }
+  */
+
+
+ 
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s, color 0.3s;
+    }
 
 body.light {
   background: #f5f5f5;
