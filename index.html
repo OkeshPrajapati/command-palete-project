@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Command Palette</title>
   <link rel="stylesheet" href="style.css">
-  
+
 
 </head>
+
 <body>
   <!-- Homepage Content -->
-  <h1>⚡ Command Palette Project</h1>
+  <h1> Command Palette Project</h1>
 
-   <p>Press <b>Ctrl + K</b> to open the palette</p>
-  <button class="btn" id="toggleTheme">🌙 Toggle Theme</button>
+  <p>Press <b>Ctrl + K</b> to open the palette</p>
+  <button class="btn" id="toggleTheme"> Toggle Theme</button>
 
   <!-- Shortcuts Section -->
   <div class="shortcuts">
-    <h3>⌨️ Available Shortcuts</h3>
+    <h3> Available Shortcuts</h3>
     <ul>
       <li><b>yt cats</b> → Search on YouTube</li>
       <li><b>gh react</b> → Search on GitHub</li>
@@ -30,8 +32,9 @@
   <div class="palette hidden" id="palette">
     <input type="text" id="search" placeholder="Type a command...">
     <div class="suggestions" id="suggestions"></div>
-    <button class="clear-btn hidden" id="clearBtn" onclick="clearHistory()">🗑️ Clear Search History</button>
+    <button class="clear-btn hidden" id="clearBtn" onclick="clearHistory()"> Clear Search History</button>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
