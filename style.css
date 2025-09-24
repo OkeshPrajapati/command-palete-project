@@ -1,4 +1,4 @@
-
+/* 
     body {
       font-family: Arial, sans-serif;
       background: #1e1e1e;
@@ -96,4 +96,166 @@
     body.light .suggestion:hover {
       background: #ccc;
     }
+  */
+
+
  
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background: #f5f5f5;
+      color: black;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+      background: #444;
+      color: white;
+    }
+
+    body.light .btn {
+      background: #180d0d;
+      color: rgb(238, 214, 214);
+    }
+
+    .shortcuts {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #2d2d2d;
+      width: 320px;
+    }
+
+    body.light .shortcuts {
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+
+    .shortcuts h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .shortcuts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .shortcuts li {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .palette {
+      background: #2d2d2d;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      padding: 20px;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    body.light .palette {
+      background: #fff;
+      color: black;
+    }
+
+    /* 🔍 Styled Search Box */
+    .palette input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #444;
+      background: #1e1e1e;
+      color: white;
+      outline: none;
+      font-size: 16px;
+      border-radius: 8px;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+       box-sizing: border-box;  
+    }
+
+    body.light .palette input {
+      background: #f9f9f9;
+      color: #000;
+      border: 1px solid #bbb;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .palette input:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 8px rgba(74, 144, 226, 0.6), inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .suggestions {
+      margin-top: 10px;
+      background: #3a3a3a;
+      border-radius: 5px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    body.light .suggestions {
+      background: #e0e0e0;
+    }
+
+    .suggestion {
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    .suggestion:hover {
+      background: #555;
+    }
+
+    body.light .suggestion:hover {
+      background: #ccc;
+    }
+
+    .clear-btn {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #c0392b;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .clear-btn.hidden {
+      display: none;
+    }

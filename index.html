@@ -11,22 +11,27 @@
 <body>
   <!-- Homepage Content -->
   <h1>⚡ Command Palette Project</h1>
-  <p>Press <b>Ctrl + K</b> to open the palette and try commands:</p>
-  <ul>
-    <li><code>yt cats</code> → Search YouTube</li>
-    <li><code>g hello</code> → Search Google</li>
-    <li><code>gh react</code> → Search GitHub</li>
-    <li><code>tw news</code> → Search Twitter</li>
-    <li><code>toggle theme</code> → Switch Dark/Light mode</li>
-  </ul>
-  <button class="btn" id="themeBtn">Toggle Theme</button>
+
+   <p>Press <b>Ctrl + K</b> to open the palette</p>
+  <button class="btn" id="toggleTheme">🌙 Toggle Theme</button>
+
+  <!-- Shortcuts Section -->
+  <div class="shortcuts">
+    <h3>⌨️ Available Shortcuts</h3>
+    <ul>
+      <li><b>yt cats</b> → Search on YouTube</li>
+      <li><b>gh react</b> → Search on GitHub</li>
+      <li><b>tw news</b> → Search on Twitter</li>
+      <li><b>anything else</b> → Google Search</li>
+    </ul>
+  </div>
 
   <!-- Command Palette -->
   <div class="palette hidden" id="palette">
-    <input type="text" id="search" placeholder="Type a command... (e.g. yt cats, g hello)">
+    <input type="text" id="search" placeholder="Type a command...">
     <div class="suggestions" id="suggestions"></div>
+    <button class="clear-btn hidden" id="clearBtn" onclick="clearHistory()">🗑️ Clear Search History</button>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
